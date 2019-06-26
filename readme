@@ -1,4 +1,7 @@
 1.python 导入文件和导入代码的路径不是一样的，导入文件相对位置是从代码所在目录，导入代码的相对位子是从项目根目录开始。
+***shell和pycharm具有相同路径的方*****
+把pycharm里面的workpath设置成项目跟目录即可 https://www.cnblogs.com/geoffreyone/p/10767801.html
+
 2.python from A import B，A为文件名称，B为类 函数之类的
 
 
