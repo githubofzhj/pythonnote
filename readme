@@ -4,6 +4,9 @@
 
 2.python from A import B，A为文件名称，B为类 函数之类的
 
+3.pytorch和tensorflow都可以直接再anaconda中安装cuda和cudnn，注意要匹配
+
+
 
 
 强化学习：
