@@ -9,7 +9,7 @@
 
 
 pytorch：
-tensor操作中的dim
+1.tensor操作中的dim
 两种：
 第一种对tensor维度进行改变的（uusqueeze）：dim=0是tensor整体，dim每加1就进一个括号，dim=-1是对最后的数字进行操作。
 第二种是对tensor内数据进行操作（transpose）:两维度举例：dim=0指从第一维度（行）看，dim=1指从第二维度（列）看。
@@ -22,6 +22,11 @@ a.unsqueeze(dim=2):[[[1],[2],[3]],[4],[5],[6]]]
 a.unsqueeze(dim=0):[[[1,2,3],[4,5,6]]]
 a.transpoese(0,1):[[1,4],[2,5],[3,6]]
 
+
+2.repeat()对每一个维度乘以输入的元组的倍数
+
+x2_lstm=x2_lstm.unsequeeze(dim=1)#b*1*l2*c
+x2_lstm = x2_lstm.repeat(1, x1_max_len, 1, 1)  # b*l1*l2*c
 
 强化学习：
 Q-learning
