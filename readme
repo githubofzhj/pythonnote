@@ -23,7 +23,10 @@ a.unsqueeze(dim=0):[[[1,2,3],[4,5,6]]]
 a.transpoese(0,1):[[1,4],[2,5],[3,6]]
 
 
-2.repeat()对每一个维度乘以输入的元组的倍数
+2.
+a=torch.Tensor([[1],[2],[3]])
+a.repeat(2，4)对每一个维度乘以输入的元组的倍数shape=(2,8)。复制内存
+a.expand(3,4)把a的维度变成输入的形状shape=（3，4）其中a原来维度不为1的维度数值必须和原来的一样或者为-1，a原来为1的维度可以乘以任意倍数。不复制内存
 
 x2_lstm=x2_lstm.unsequeeze(dim=1)#b*1*l2*c
 x2_lstm = x2_lstm.repeat(1, x1_max_len, 1, 1)  # b*l1*l2*c
