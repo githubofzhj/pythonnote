@@ -8,6 +8,13 @@
 
 
 
+pytorch：
+tensor纬度问题。例如tensor：a=[[1,2,3],[4,5,6]]是一个2x3tensor。但是dim=0是对整个tensor这纬，dim=1是对[1,2,3] [4,5,6]这维，dim=2和dim=-1对数字，
+1，2，3，4，5，6这维。
+例如
+a.unsqueeze(dim=2):[[[1],[2],[3]],[4],[5],[6]]]
+a.unsqueeze(dim=0):[[[1,2,3],[4,5,6]]]
+
 
 强化学习：
 Q-learning
