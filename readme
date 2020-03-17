@@ -44,6 +44,10 @@ sss='Rami Eid is studying at Stony Brook University in New York'
 doc = nlp(sss)
 for token in doc:
     print(token, token.pos_, token.tag_,token.pos,token.ent_iob_,token.ent_type_)#pos_和tag_是两种不同的postag定义
+ 
+ 机器学习：优化方法
+ 根据loss计算参数的梯度，不同优化方法对得到的梯度和学习率控制原参数变化量。所以loss如何乘以10倍，那么梯度会乘以10倍数，如果学习率变成0.1倍数
+ 则SGD优化器对原参数改变量是一样的。但是Adam不一样，因为它有一个调整改变量的算法且不是线性的。
 
 
 
